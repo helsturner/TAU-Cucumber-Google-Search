@@ -1,6 +1,8 @@
 # TAU Cucumber with JavaScript course by Gavin Samuels
-## Chapter 4
+## Chapter 4 - Feature files, Step Definitions and Page Objects
 
-## WDIO 7 with Cucumber using async
+### Google Searching
 
-## To run: npx wdio run wdio.conf.js
+### WDIO 7 with Cucumber using async
+
+### To run: npx wdio run wdio.conf.js
