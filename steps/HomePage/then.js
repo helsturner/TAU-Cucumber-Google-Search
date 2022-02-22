@@ -18,5 +18,5 @@ Then(/^links related to "(.*)" are shown on the results page$/, async (keyword) 
 //             );
 //         };
 //    };
-    await verifyLinksContain(links, keyword)
+    await verifyLinksContain(keyword)
 });
