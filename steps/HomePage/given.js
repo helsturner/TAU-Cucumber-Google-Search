@@ -3,7 +3,6 @@ const homePage = require('../../pages/Home')
 const goToUrl = require('../../support/actions/goToURL');
 
 Given("A web browser is at the Google home page", async () => {
-    // await browser.url('/');
     await goToUrl(homePage.url);
     await homePage.closeCookiePopup();
 });
