@@ -3,6 +3,6 @@
  * @param {String} url URL to load
  */
 
-module.exports = async function goToUrl(url) {
+module.exports = async (url) => {
     await browser.url(`/${url}`);
 };

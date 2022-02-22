@@ -4,7 +4,7 @@ const assert = require("assert");
  * Ensure link text includes keyword
  */
 
-async export default (links, keyword) => {
+module.exports = async (links, keyword) => {
     for (let index = 0; index < links.length; index++) {
         const link = await links[index];
         const linkText = await link.getText();
