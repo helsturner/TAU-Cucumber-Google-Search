@@ -1,5 +1,5 @@
 const { When } = require('@wdio/cucumber-framework');
-const search = require('../../support/actions/search');
+const googleSearch = require('../../support/actions/search');
 
 When(/^The user enters "(.*)" into the search bar$/, async (keyword) => {
     // Enter search term
@@ -7,5 +7,5 @@ When(/^The user enters "(.*)" into the search bar$/, async (keyword) => {
     // await $(".gLFyf.gsfi").setValue(keyword);
     // await $(".aajZCb .gNO89b").waitForDisplayed(5000);
     // await $(".aajZCb .gNO89b").click();
-    await search(keyword, $(".gLFyf.gsfi"), $(".aajZCb .gNO89b"))
+    await googleSearch(keyword)
   });

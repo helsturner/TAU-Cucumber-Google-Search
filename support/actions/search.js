@@ -7,11 +7,13 @@ const homePage = require('../../pages/Home')
  * @param {object} submitButton WebdriverIO submit button element
  */
 
-module.exports = async (keyword, inputField, submitButton) => {
-    await inputField.waitForDisplayed(5000);
-    await inputField.click();
-    await inputField.setValue(keyword);
-    await submitButton.waitForDisplayed(5000);
-    await submitButton.click();
+module.exports = async (keyword) => {
+    // await inputField.waitForDisplayed(5000);
+    // await inputField.click();
+    // await inputField.setValue(keyword);
+    // await submitButton.waitForDisplayed(5000);
+    // await submitButton.click();
+    await homePage.search(keyword);
+
 };
 
