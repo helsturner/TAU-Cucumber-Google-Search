@@ -4,5 +4,5 @@
  */
 
 module.exports = async (url) => {
-    await browser.url(`/${url}`);
+    await browser.url(`${url}`);
 };
